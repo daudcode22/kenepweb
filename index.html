@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Kenep</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <script src="./js/ubahtitle.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+     <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- PapaParse (parser CSV Google Sheets) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <div class="container">
+            <!-- Kiri -->
+            <div class="logo-title">
+                <img src="images/logo.png" alt="Logo Desa Kenep" class="logo">
+                <h1>Desa Kenep</h1>
+            </div>
+    
+            <!-- Kanan -->
+            <nav id="nav-menu">
+                <a href="index.html" class="active">Beranda</a>
+                <a href="profil.html">Profil Desa</a>
+                <a href="galeri.html" >Galeri</a>
+                <a href="infografis.html" >Infografis</a>
+            </nav>
+               <!-- Tombol hamburger -->
+        <div class="hamburger" id="hamburger-btn">
+            ☰
+        </div>
+        </div>
+    </header>
+    
+    
+    
+
+<!-- Hero Slider -->
+<section class="slider">
+    <div class="slides">
+        <img src="./images/slider1.PNG" alt="Panorama desa kenep">
+        <img src="./images/slider2.PNG" alt="Panorama desa kenep">
+        <img src="./images/slider3.PNG" alt="Panorama desa kenep">
+    </div>
+    <div class="hero-text">
+        <h2>Selamat Datang di Desa Kenep</h2>
+        <p>Situs informasi resmi Desa Kenep</p>
+    </div>
+</section>
+
+<!-- Jelajahi Desa -->
+<!-- Jelajahi Desa -->
+<section class="explore">
+    <h2>Jelajahi Desa</h2>
+    <div class="cards">
+        <a href="profil.html" class="card">
+            <div class="card-icon">🏘️</div>
+            <div class="card-title">Profil Desa</div>
+        </a>
+        <a href="galeri.html" class="card">
+            <div class="card-icon">📸</div>
+            <div class="card-title">Galeri</div>
+        </a>
+        <a href="infografis.html" class="card">
+            <div class="card-icon">📊</div>
+            <div class="card-title">Infografis</div>
+        </a>
+    </div>
+</section>
+
+<!-- Sambutan Kepala Desa -->
+<section class="sambutan">
+    <div class="sambutan-container">
+      <div class="logo-sambutan">
+        <img src="./images/logo.png" alt="Logo Desa Kenep">
+      </div>
+      <div class="teks-sambutan">
+          <h2>Sambutan Kepala Desa</h2>
+            <h4>AHMAD YUSUF</h4>
+            <p>
+                Assalamu’alaikum Warahmatullahi Wabarakatuh.<br><br>
+                Selamat datang di website resmi Desa Kenep. Semoga informasi dan layanan yang kami sajikan dapat
+                bermanfaat bagi seluruh warga masyarakat, serta mendorong partisipasi aktif dalam pembangunan desa.
+            </p>
+        <p class="nama-kades">— Kepala Desa Kenep</p>
+        <h4>AHMAD YUSUF</h4>
+      </div>
+    </div>
+  </section>
+  
+<!-- Statistik -->
+<section class="stats">
+    <h2>Statistik Desa</h2>
+    <div class="stats-grid">
+        <div class="stat-item"><h3>Jumlah Penduduk</h3> <p id="stat-total">—</p> </div>
+        <div class="stat-item"><h3>Laki-Laki</h3><p id="stat-l">—</p> </div>
+        <div class="stat-item"><h3>Perempuan</h3><p id="stat-p">—</p> </div>
+        <div class="stat-item"><h3>Kepala Keluarga</h3><p id="stat-kk">—</p> </div>
+    </div>
+    <section class="status">
+        <div id="loading" class="badge loading">Memuat data…</div>
+        <div id="loaded" class="badge loaded" hidden>Data terakhir dimuat.</div>
+        <div id="error" class="badge error" hidden>Gagal memuat data. Periksa koneksi/URL sheet.</div>
+      </section>
+      <section class="container-bt-more">
+
+        <a href="infografis.html" class="bt-more">Tampilkan lebih lengkap</a>
+    </section>
+</section>
+
+<!-- Berita -->
+<section class="news">
+    <h2>Galeri Desa</h2>
+    <div class="news-list">
+        <div class="news-item">
+            <img src="./images/slider1.PNG" alt="Gambar 1" class="thumbnail">
+            <p>Deskripsi singkat gambar 1</p>
+        </div>
+        <div class="news-item">
+            <img src="./images/slider2.PNG" alt="Gambar 2" class="thumbnail">
+            <p>Deskripsi singkat gambar 2</p>
+        </div>
+        <div class="news-item">
+            <img src="./images/slider2.PNG" alt="Gambar 2" class="thumbnail">
+            <p>Deskripsi singkat gambar 3</p>
+        </div>
+    </div>
+    <section class="container-bt-more">
+
+        <a href="galeri.html" class="bt-more">Tampilkan lebih lengkap</a>
+    </section>
+</section>
+
+<!-- Modal untuk gambar besar -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+
+
+<!-- Peta Desa -->
+<section id="peta">
+    <h2>Peta Desa Kenep</h2>
+    <div id="map"></div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Desa Kenep. All Rights Reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/infografis.js"></script>
+<script src="./js/navbar.js"></script>
+</body>
+</html>

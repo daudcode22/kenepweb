@@ -1,0 +1,130 @@
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  .page-title h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+  }
+  
+  .visi-misi h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .sejarah h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .struktur img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  /* kondisi geografis */
+  .geografis {
+    padding: 20px;
+  }
+  
+  .geo-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .geo-info {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .profil-map {
+    flex: 1;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 8px;
+  }
+  
+   /* button sembunyikan misi */
+   .hidden {
+    display: none;
+    transition: 300ms;
+  }
+  .toggle-btn {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* bagan */
+  img.thumbnail{
+    height: 100px;
+  }
+  /* mobile view / responsif */
+  /* === RESPONSIVE UNTUK PROFIL DESA === */
+@media (max-width: 768px) {
+  .content {
+      padding: 1rem;
+  }
+
+  .page-title h2 {
+      font-size: 1.5rem;
+  }
+
+  .visi-misi h3,
+  .sejarah h3,
+  .struktur h3,
+  .geografis h3 {
+      font-size: 1.1rem;
+  }
+/* mobile view kondisi grafis */
+  .geo-container {
+    flex-direction: column;
+  }
+  .geo-info {
+      width: 100%;
+  }
+
+  .profil-map {
+    min-height: 250px;
+    height: 250px;
+  }
+
+  .struktur img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title h2 {
+      font-size: 1.2rem;
+  }
+
+  .visi-misi p,
+  .sejarah p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+
+  .geo-info {
+      font-size: 0.9rem;
+  }
+
+  .toggle-btn {
+      width: 100%;
+      font-size: 0.9rem;
+  }
+}

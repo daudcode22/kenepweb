@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 document.addEventListener("DOMContentLoaded", () => {
     const hamburgerBtn = document.getElementById("hamburger-btn");
@@ -8,3 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+=======
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburgerBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+});
+
+>>>>>>> ce7c057 (second change)

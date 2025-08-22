@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -153,3 +154,160 @@ window.addEventListener('resize', () => {
 <script src="./js/galeri.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Kenep</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/profile_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="./js/ubahtitle.js"></script>
+</head>
+<body>
+    <header>
+       <!-- navbar -->
+       <div class="container">
+        <!-- Kiri -->
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Logo Desa Kenep" class="logo">
+            <h1>Desa Kenep</h1>
+        </div>
+
+        <!-- Kanan -->
+        <nav id="nav-menu">
+            <a href="index.html" >Beranda</a>
+            <a href="profil.html" class="active">Profil Desa</a>
+            <a href="galeri.html" >Galeri</a>
+            <a href="infografis.html" >Infografis</a>
+        </nav>
+           <!-- Tombol hamburger -->
+    <div class="hamburger" id="hamburger-btn">
+        ☰
+    </div>
+    </div>
+    </header>
+    
+    
+    
+
+<!-- Hero Slider -->
+<section class="slider">
+    <div class="slides">
+        <img src="./images/slider1.PNG" alt="Panorama desa kenep">
+        <img src="./images/slider2.PNG" alt="Panorama desa kenep">
+        <img src="./images/slider3.PNG" alt="Panorama desa kenep">
+    </div>
+    <div class="hero-text">
+        <h2>Selamat Datang di Desa Kenep</h2>
+        <p>Situs informasi resmi Desa Kenep</p>
+    </div>
+</section>
+
+<main class="content">
+    <section class="page-title">
+      <h2>Profil Desa</h2>
+    </section>
+
+    <section class="visi-misi">
+      <h3>Visi</h3>
+      <p> Membangun Desa menuju masyarakat yang maju, makmur, tentram, sejahtera dan bahagia dengan memberi pelayanan yang maksimal dan tercukupi di segala bidang
+      </p>
+      <h3>Misi</h3>
+      <ul id="program-list">
+        <li>Penyediaan air bersih untuk air minum dan kebutuhan sehari-hari bagi masyarakat</li>
+        <li>Memaksimalkan fasilitas dan pelayanan kesehatan bagi masyarakat</li>
+        <li>Sektor pertanian </li>
+        <li class="hidden">Peningkatan UMKM di Desa Kenep</li>
+        <li class="hidden">Pembinaan dan pelatihan bagi petani supaya memunculkan petani milenia</li>
+        <li class="hidden">Pembangunan infrastruktur sesuai dengan kebutuhan di lingkungan sekitar dan pertanian ataupun fasilitas umum</li>
+        <li class="hidden">Memberdayakan adat istiadat yang ada di Desa Kenep</li>
+        <li class="hidden">Mengadakan proses sertifikat tanah atau ptsl secara gratis</li>
+        <li class="hidden">Pembinaan dan pemberdayaan bagi pemuda di Desa Kenep</li>
+        <li class="hidden">Meningkatkan kualitas Sumber Daya Manusia (SDM)</li>
+        <li class="hidden">Meningkatkan kesehatan masyarakat dan kelestarian lingkungan</li>
+        <li class="hidden">Meningkatkan potensi ekonomi masyarakat</li>
+        <li class="hidden">Meningkatkan partisipasi masyarakat dalam pembangunan desa</li>
+        <li class="hidden">Meningkatkan peran Pemerintah desa dan pelayanan terhadap masyarakat</li>
+        <button id="toggle-btn" class="toggle-btn">Tampilkan Lebih Banyak</button>
+      </ul>
+    </section>
+    <section class="sejarah">
+      <h3>Sejarah</h3>
+        <p> Setelah digali dan ditelusuri dari beberapa narasumber khususnya dari sesepuh maupun tokoh masyarakat Desa Kenep, konon kabarnya pada masa penjajahan Belanda dan Jepang Desa ini dijadikan sebagai tempat pertempuran tentara Indonesia untuk mengusir penjajah dari Desa ini pada khususnya dan dari Indonesia pada umunya dank arena Desa ini termasuk dataran tinggi dan tanahnya sangat subur dan dalam, sehingga tentara – tentara Belanda maupun Jepang yang melewati daerah ini melihat tanaman padi dan masyarakat yang dating dari daerah Madura dan menginap yang ditunjukkan pada makam pembabat tanah Desa, akhirnya orang tersebut tidak bisa pulang sampai meninggal di Desa Kenep.</p>
+        <p>Pada jaman penajajah Belanda sekitar abad 19 dimana yang menjadi Kepala Desa (Petinggi ) pada masa itu h. Sirat dan selanjutnya kepimpinan desa ini diganti oleh Bapak Kepala Desa H.Soepardi dan diganti Bapak Kepala Desa Zaeni Efendi dan kepimimpinannya diganti oleh Mo. Solikin Sodiq, Kepemimpinan diganti oleh Nur Sholeh, dan diganti oleh Samsul Arifin serta diganti oleh Nur Sholeh kembali yang mana semua itu proses pemilihan dan pengangkatannya dengan caa pemilihan</p>
+    </section>
+    <section class="struktur">
+      <h3>Struktur Organisasi Pemerintahan</h3>
+      <img src="./images/bagan_desa_kenep.png" alt="Struktur Organisasi Desa Kenep" class="">
+    </section>
+<!-- Modal untuk gambar besar -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+    <section class="geografis">
+        <h3>Geografis Desa</h3>
+        <div class="geo-container">
+          
+          <!-- Kiri: Informasi Geografis -->
+          <div class="geo-info">
+            <div><strong>Luas Desa:</strong> 330 Hektar</div>
+          
+            <div><strong>Batas Desa:</strong></div>
+            <ul>
+              <li>Utara: Desa Sidowayah</li>
+              <li>Timur: Distrik Pandaan
+              </li>
+              <li>Selatan: Desa Ngembe</li>
+              <li>Barat: Desa GunungSari
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Kanan: Map -->
+          <div id="map-profil" class="profil-map"></div>
+        </div>
+      </section>
+      
+  </main>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Desa Kenep. All Rights Reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map-profil').setView([-7.618200066027505, 112.74874664441553], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([-7.618200066027505, 112.74874664441553]).addTo(map)
+    .bindPopup("<b>Desa Kenep</b>")
+    .openPopup();
+    window.addEventListener('load', () => {
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 300);
+});
+
+window.addEventListener('resize', () => {
+  map.invalidateSize();
+});
+
+</script>
+<script src="./js/slider.js"></script>
+<script src="./js/profil.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="./js/galeri.js"></script>
+</body>
+</html>
+>>>>>>> ce7c057 (second change)

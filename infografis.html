@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -146,3 +147,153 @@
 <script src="./js/navbar.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Kenep</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <script src="./js/ubahtitle.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <link rel="stylesheet" href="./css/navbar.css">
+    <!-- CSS tambahan untuk halaman ini -->
+  <link rel="stylesheet" href="./css/style-infografis.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- PapaParse (parser CSV Google Sheets) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+          ></script>
+</head>
+<body>
+    <header>
+       <!-- navbar -->
+       <div class="container">
+        <!-- Kiri -->
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Logo Desa Kenep" class="logo">
+            <h1>Desa Kenep</h1>
+        </div>
+
+        <!-- Kanan -->
+        <nav id="nav-menu">
+            <a href="index.html" >Beranda</a>
+            <a href="profil.html">Profil Desa</a>
+            <a href="galeri.html" >Galeri</a>
+            <a href="infografis.html" class="active" >Infografis</a>
+        </nav>
+           <!-- Tombol hamburger -->
+    <div class="hamburger" id="hamburger-btn">
+        ☰
+    </div>
+    </div>
+    </header>
+    
+    
+    
+
+<!-- Hero Slider -->
+<section class="slider">
+    <div class="slides">
+        <img src="./images/slider1.PNG" alt="Panorama desa kenep">
+        <img src="./images/slider2.PNG" alt="Panorama desa kenep">
+        <img src="./images/slider3.PNG" alt="Panorama desa kenep">
+    </div>
+    <div class="hero-text">
+        <h2>Selamat Datang di Desa Kenep</h2>
+        <p>Situs informasi resmi Desa Kenep</p>
+    </div>
+</section>
+
+<main class="infografis">
+    <section class="page-head">
+      <h2>Infografis Kependudukan Desa Kenep</h2>
+      <p class="desc">Data ditarik otomatis dari Google Sheets. Perbarui angka di sheet, halaman ini ikut ter-update.</p>
+    </section>
+
+    <!-- STAT CARDS -->
+    <section class="stats-grid" id="stat-cards">
+      <div class="stat-card">
+        <h3>Total Penduduk</h3>
+        <p id="stat-total">—</p>
+      </div>
+      <div class="stat-card">
+        <h3>Kepala Keluarga</h3>
+        <p id="stat-kk">—</p>
+      </div>
+      <div class="stat-card">
+        <h3>Laki-Laki</h3>
+        <p id="stat-l">—</p>
+      </div>
+      <div class="stat-card">
+        <h3>Perempuan</h3>
+        <p id="stat-p">—</p>
+      </div>
+    </section>
+
+    <!-- CHARTS -->
+    <section class="chart-section">
+      <div class="chart-container">
+        <h3>Kelompok Umur</h3>
+        <canvas id="umurChart" height="240"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Jumlah RT Per Dusun</h3>
+        <canvas id="dusunChart" height="240"></canvas>
+      </div>
+    </section>
+    <section class="chart-section">
+        <div class="chart-container-pendidikan">
+          <h3>Infografis Pendidikan</h3>
+          <canvas id="pendidikanChart" height="240"></canvas>
+        </div>
+      </section>
+      
+<!-- Bagian tambahan di bawah chart penduduk -->
+
+<!-- Bagian Pekerjaan -->
+<section class="pekerjaan-section">
+    <h3>Pekerjaan</h3>
+    <div id="pekerjaanCards" class="cards-container">
+      <!-- Card pekerjaan akan dimasukkan di sini lewat JS -->
+    </div>
+  </section>
+  
+  
+  <!-- Status Perkawinan -->
+  <section class="status-section">
+    <h3>Status Perkawinan</h3>
+    <div class="status-cards" id="statusPerkawinanCards"></div>
+  </section>
+  
+  <!-- Pemeluk Agama -->
+  <section class="status-section">
+    <h3>Pemeluk Agama</h3>
+    <div class="status-cards" id="agamaCards"></div>
+  </section>
+  
+
+    <!-- LOADING & ERROR -->
+    <section class="status">
+      <div id="loading" class="badge loading">Memuat data…</div>
+      <div id="loaded" class="badge loaded" hidden>Data terakhir dimuat.</div>
+      <div id="error" class="badge error" hidden>Gagal memuat data. Periksa koneksi/URL sheet.</div>
+    </section>
+  </main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Desa Kenep. All Rights Reserved.</p>
+</footer>
+
+
+<script src="./js/slider.js"></script>
+<!-- <script src="./js/script.js"></script> -->
+<script src="./js/infografis.js"></script>
+<script src="./js/navbar.js"></script>
+</body>
+</html>
+>>>>>>> ce7c057 (second change)

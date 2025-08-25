@@ -11,3 +11,4 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
+showSlides();
